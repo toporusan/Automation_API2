@@ -1,12 +1,12 @@
 {
   "students": [
     {
-      "name": "John",
-      "location": "india",
-      "phone": "1234",
+      "name": "TOMMY",
+      "location": "USA",
+      "phone": "5111111",
       "courses": [
-        "java",
-        "Selenium"
+        "java-script",
+        "Selenide"
       ],
       "id": "f66f"
     },
