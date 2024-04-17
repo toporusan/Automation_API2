@@ -1,13 +1,7 @@
 {
   "students": [
     {
-      "name": "TOMMY",
-      "location": "USA",
-      "phone": "5111111",
-      "courses": [
-        "java-script",
-        "Selenide"
-      ],
+      "empty": false,
       "id": "f66f"
     },
     {

@@ -11,10 +11,10 @@ import static io.restassured.RestAssured.given;
 
 public class Faker_Data_Generator {
 
-    @Test
+   // @Test (priority = 1)
     void testGenerateDummyData() {
 
-/*        Faker faker = new Faker();
+        Faker faker = new Faker();
 
         // Create name and lastname
         String fullName = faker.name().fullName();
@@ -39,7 +39,12 @@ public class Faker_Data_Generator {
         System.out.println("Phone number: " +phoneNumber);
         System.out.println("Email: " +email);
 
-        System.out.println();*/
+    }
+
+
+    @Test (priority = 2)
+    void add_JSON_Data() {
+        System.out.println();
 
         Response res = given()
                 .contentType(ContentType.JSON)
@@ -47,22 +52,20 @@ public class Faker_Data_Generator {
                 .get("http://localhost:3000/students");
 
         String json = res.body().asPrettyString();
-        //System.out.println(json);
+        System.out.println(json);
 
         JSONArray array = new JSONArray(json);
         String course = String.valueOf(array.getJSONObject(0).getJSONArray("courses").get(0));
         System.out.println(course);
+
         array.getJSONObject(0).getJSONArray("courses").put(0, "Selenide");
 
-       // System.out.println(String.valueOf(array));
+        // System.out.println(String.valueOf(array));
 
-        Response res2 = given()
+        /*Response res2 = given()
                 .contentType("application/json")
                 .body(array)
                 .when()
-                .put("http://localhost:3000/students");
-
-
-
+                .put("http://localhost:3000/students/f66f");*/
     }
 }
