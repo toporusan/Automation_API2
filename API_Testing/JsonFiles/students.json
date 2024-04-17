@@ -1,0 +1,44 @@
+{
+  "students": [
+    {
+      "name": "John",
+      "location": "india",
+      "phone": "1234",
+      "courses": [
+        "java",
+        "Selenium"
+      ],
+      "id": "f66f"
+    },
+    {
+      "name": "Marry",
+      "location": "USA",
+      "phone": "5989556",
+      "courses": [
+        "java-script",
+        "Selenium"
+      ],
+      "id": "eda9"
+    },
+    {
+      "id": "44df",
+      "name": "Marry",
+      "location": "Hamburg",
+      "phone": "55565666",
+      "courses": [
+        "Java",
+        "Go"
+      ]
+    },
+    {
+      "id": "d9d1",
+      "courses": [
+        "Java",
+        "Go"
+      ],
+      "phone": "8799655566",
+      "name": "Harry",
+      "location": "Nevada"
+    }
+  ]
+}

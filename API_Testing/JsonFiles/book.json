@@ -1,0 +1,30 @@
+{
+  "book": [
+    {
+      "author": "George Orwell",
+      "category": "Fiction",
+      "price": 10.99,
+      "title": "1984"
+    },
+    {
+      "author": "J.K. Rowling",
+      "category": "Fantasy",
+      "price": 12.99,
+      "title": "Harry Potter and the Philosopher's Stone"
+    },
+    {
+      "author": "Harper Lee",
+      "category": "Classic",
+      "isbn": "9780061120084",
+      "price": 9.99,
+      "title": "To Kill a Mockingbird"
+    },
+    {
+      "author": "Gabriel García Márquez",
+      "category": "Magical Realism",
+      "isbn": "9781400034688",
+      "price": 11.99,
+      "title": "One Hundred Years of Solitude"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+
+Get SINGLE USER
+https://reqres.in/api/users/2
+
+Post CREATE
+https://reqres.in/api/users
+
+{
+    "name": "morpheus",
+    "job": "leader"
+}
+
+
+Put UPDATE
+https://reqres.in/api/users/2
+
+{
+    "name": "morpheus",
+    "job": "zion resident"
+}
+
+Delete USER
+https://reqres.in/api/users/userid
+204
+
+Get LIST USERS
+https://reqres.in/api/users?page=2
+200

@@ -1,0 +1,12 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="IncorrectHttpHeaderInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="customHeaders">
+        <set>
+          <option value="Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJ0X3NFQlB6Nk4tWTR4eHUwblEwYTB6UzdIQ2kxSUNMbTBlSng2TWthRWZFIn0.eyJleHAiOjE3MTIxMjg5NjEsImlhdCI6MTcxMjEyODA2MSwianRpIjoiNTdlZDZjMTMtYTEyMy00ZjU1LWJkNjktZTNkYjZhYjYwMGZlIiwiaXNzIjoiaHR0cDovLzE3Mi4xNi4yNy4xMDQ6NTA2NjYvcmVhbG1zL2ZpbmN1YmUiLCJzdWIiOiJkNjZlNmRlYi0yYjQ2LTQwY2ItYWMwYy0wZTJlOTk1MzYzMWEiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJhdXRoIiwic2Vzc2lvbl9zdGF0ZSI6ImVmZWU1NGUzLTBkYWMtNDBkNy1hMmFkLWJhNmQwYTc2MDlmOSIsImFjciI6IjEiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1maW5jdWJlIiwicmVtb3RlX2lkZW50aWZpZWQiXX0sInNjb3BlIjoicHJvZmlsZSIsInNpZCI6ImVmZWU1NGUzLTBkYWMtNDBkNy1hMmFkLWJhNmQwYTc2MDlmOSIsImZsZXhjdWJlX2lkIjoiNjAwMzQ2NTYiLCJwaG9uZV9udW1iZXIiOiI5OTgzMzM5MTMwMTAiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiI5OTgzMzM5MTMwMTAiLCJzZWN1cml0eV9oYXNoIjoiZWIxMTVmNTk4MzA2NTI0NjhhZGQzMGFjNDlmNjAzMzdhNzBmMWIyZjllNmI1MDQzOTJhYzM2MDljNmIwODY2MSIsImN1c3RvbWVyX2lkIjoiMDIwMDAwMzctYTMyMS00OGZhLTllNzYtNzI2NTE2MTNlYzg4In0.gXQVRRaKH7KqwM5vNFkWzfClx2QTOHiNC_Qtyh-oq4jNVDplJGUkMsL_YAi35AWE8gMf7cr5gTRUQqTJvh_85GKSpG3_BicE9pTmnAl9Xo0jjDsAW7Zend2LR9t7VBQ6VEHObg-prb6yIXpQl9ep4KJMqxzCn_kQyx4A3lVQcWJ-4-e2GJCy9frk25ut5kNFPagkSVt-HzeYckoC5cYlIICQHpuRG0pt5Jpj0EhePqzC_hU7JBDGp6V8XBLpNq3sJPhtQwXnWQvfzwpeC5m6IDFE61WHA7lny0Bb0zm9K6IshwFXZI4icBmB4-SI0laMsJ6q786XujO7bxOKBXKI8A\n" />
+        </set>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
