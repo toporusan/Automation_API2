@@ -99,7 +99,7 @@ public class Authentications {
     @Test(priority = 7)
     void testAPIKey2Authentication() {
 
-        String weatherAPIky = "1";
+        String weatherAPIky = "0";
 
         // Method 1
         given()
