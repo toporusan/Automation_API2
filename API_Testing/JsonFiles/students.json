@@ -1,7 +1,13 @@
 {
   "students": [
     {
-      "empty": false,
+      "courses": [
+        "Sel----",
+        "Selenide"
+      ],
+      "phone": "5111111",
+      "name": "Masdasdasdasdasd",
+      "location": "USA",
       "id": "f66f"
     },
     {
@@ -33,6 +39,16 @@
       "phone": "8799655566",
       "name": "Harry",
       "location": "Nevada"
+    },
+    {
+      "id": "aff6",
+      "name": "Santos",
+      "location": "Guinea-Bissau",
+      "phone": "848.730.8065",
+      "courses": [
+        "Joule",
+        "MetaQuotes Language (MQL4/MQL5)"
+      ]
     }
   ]
 }

@@ -29,7 +29,7 @@ public class SerializationDeserialization {
         pojoStudent.setCourses(courseArr);
 
 
-        // convert java object ---> json object (serialization)
+        //   (serialization) convert java object ---> json object
         ObjectMapper objectMapper = new ObjectMapper(); // import from com.fasterxml.jackson.databind.ObjectMapper;
 
         String jsonData = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(pojoStudent);
@@ -51,7 +51,7 @@ public class SerializationDeserialization {
                 "}";
 
 
-        // convert Json object ---> POJO object (de-serialization)
+        //   (de-serialization)  convert Json object ---> POJO object
         ObjectMapper objectMapper = new ObjectMapper(); // import from com.fasterxml.jackson.databind.ObjectMapper;
 
         POJO_Student student = objectMapper.readValue(jsonData, POJO_Student.class);
