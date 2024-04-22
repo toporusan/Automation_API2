@@ -2,8 +2,8 @@
   "students": [
     {
       "courses": [
-        "Sel----",
-        "Selenide"
+        "Cryptol",
+        "Mercury"
       ],
       "phone": "5111111",
       "name": "Masdasdasdasdasd",
@@ -11,43 +11,23 @@
       "id": "f66f"
     },
     {
-      "name": "Marry",
-      "location": "USA",
-      "phone": "5989556",
+      "id": "c107",
+      "name": "Courtney",
+      "location": "Congo, Democratic Republic of the",
+      "phone": "(960) 952-0375",
       "courses": [
-        "java-script",
-        "Selenium"
-      ],
-      "id": "eda9"
-    },
-    {
-      "id": "44df",
-      "name": "Marry",
-      "location": "Hamburg",
-      "phone": "55565666",
-      "courses": [
-        "Java",
-        "Go"
+        "LabVIEW",
+        "PL/I – ISO 6160"
       ]
     },
     {
-      "id": "d9d1",
+      "id": "fe6f",
+      "name": "Ilene",
+      "location": "Switzerland",
+      "phone": "1-245-739-4217",
       "courses": [
-        "Java",
-        "Go"
-      ],
-      "phone": "8799655566",
-      "name": "Harry",
-      "location": "Nevada"
-    },
-    {
-      "id": "aff6",
-      "name": "Santos",
-      "location": "Guinea-Bissau",
-      "phone": "848.730.8065",
-      "courses": [
-        "Joule",
-        "MetaQuotes Language (MQL4/MQL5)"
+        "Apex (Salesforce.com)",
+        "PHP"
       ]
     }
   ]
