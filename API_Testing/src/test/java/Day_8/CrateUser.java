@@ -14,7 +14,7 @@ import static io.restassured.config.EncoderConfig.encoderConfig;
 public class CrateUser {
 
     @Test
-    void test_createUser(ITestContext context) {
+    void createUser(ITestContext context) {
 
         Faker faker = new Faker();
 
@@ -37,7 +37,11 @@ public class CrateUser {
 
         System.out.println("ID: " + id);
 
-        context.setAttribute("user_id",id); // create global variable
+        //context.setAttribute("user_id",id); // create global variable - работает в пределах одного теста
+        // данная переменная доступна только в пределах одного теста, не доступна в других тестах
+
+        context.getSuite().setAttribute("user_id",id);// в таком контексте данная переменная доступна на уровне
+        //test-suite  если добавить метод getSuite()
     }
 }
 
