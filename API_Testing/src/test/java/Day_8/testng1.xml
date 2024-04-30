@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <test verbose="2" preserve-order="true" name="Test 1">
+        <classes>
+            <class name="Day_8.CrateUser">
+                <methods>
+                    <include name="createUser"/>
+                </methods>
+            </class>
+            <class name="Day_8.GetUser">
+                <methods>
+                    <include name="getUser"/>
+                </methods>
+            </class>
+            <class name="Day_8.UpdateUser">
+                <methods>
+                    <include name="updateUser"/>
+                </methods>
+            </class>
+            <class name="Day_8.DeleteUser">
+                <methods>
+                    <include name="deleteUser"/>
+                </methods>
+            </class>
+
+
+        </classes>
+    </test>
+</suite>
