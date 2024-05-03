@@ -1,34 +1,1981 @@
 {
-  "students": [
-    {
-      "courses": [
-        "Cryptol",
-        "Mercury"
-      ],
-      "phone": "5111111",
-      "name": "Masdasdasdasdasd",
-      "location": "USA",
-      "id": "f66f"
+  "status": "SUCCESS",
+  "isFinish": true,
+  "metaInfo": {},
+  "data": {
+    "pageInfo": {
+      "number": 1,
+      "size": 20,
+      "totalPages": 1,
+      "totalItems": 1,
+      "hasNext": false,
+      "hasPrevious": false
     },
-    {
-      "id": "c107",
-      "name": "Courtney",
-      "location": "Congo, Democratic Republic of the",
-      "phone": "(960) 952-0375",
-      "courses": [
-        "LabVIEW",
-        "PL/I – ISO 6160"
-      ]
-    },
-    {
-      "id": "fe6f",
-      "name": "Ilene",
-      "location": "Switzerland",
-      "phone": "1-245-739-4217",
-      "courses": [
-        "Apex (Salesforce.com)",
-        "PHP"
-      ]
-    }
-  ]
+    "content": [
+      {
+        "id": 1202001,
+        "name": "Оплата по лицевому счёту",
+        "icon": "/static/payment/logos/1202001/",
+        "order": 1,
+        "target": "PAYNET",
+        "enabled": true,
+        "fields": [
+          {
+            "name": "city",
+            "label": "Город",
+            "regex": null,
+            "type": "C",
+            "metadata": null,
+            "prefix": null,
+            "order": 1,
+            "regex_description": null,
+            "parent_field_value_prefix": null,
+            "parent_field_value_metadata": null,
+            "parent_field_name": null,
+            "field_data": {
+              "orphan": [
+                {
+                  "name": "г. Ташкент",
+                  "data": "tashkent",
+                  "prefix": null,
+                  "metadata": null,
+                  "parent_field_name": null,
+                  "field_data_order": 1
+                },
+                {
+                  "name": "Ташкент обл.",
+                  "data": "tashkent_region",
+                  "prefix": null,
+                  "metadata": null,
+                  "parent_field_name": null,
+                  "field_data_order": 2
+                },
+                {
+                  "name": "Наманган",
+                  "data": "namangan",
+                  "prefix": null,
+                  "metadata": null,
+                  "parent_field_name": null,
+                  "field_data_order": 3
+                },
+                {
+                  "name": "Самарканд обл.",
+                  "data": "samarkand",
+                  "prefix": null,
+                  "metadata": null,
+                  "parent_field_name": null,
+                  "field_data_order": 4
+                },
+                {
+                  "name": "Бухара",
+                  "data": "buxara",
+                  "prefix": null,
+                  "metadata": null,
+                  "parent_field_name": null,
+                  "field_data_order": 5
+                },
+                {
+                  "name": "Андижан",
+                  "data": "andijan",
+                  "prefix": null,
+                  "metadata": null,
+                  "parent_field_name": null,
+                  "field_data_order": 6
+                },
+                {
+                  "name": "Джизак обл.",
+                  "data": "djizakh",
+                  "prefix": null,
+                  "metadata": null,
+                  "parent_field_name": null,
+                  "field_data_order": 7
+                },
+                {
+                  "name": "Сурхандарья",
+                  "data": "surhandarya",
+                  "prefix": null,
+                  "metadata": null,
+                  "parent_field_name": null,
+                  "field_data_order": 8
+                },
+                {
+                  "name": "Сырдарья",
+                  "data": "sirdarya",
+                  "prefix": null,
+                  "metadata": null,
+                  "parent_field_name": null,
+                  "field_data_order": 9
+                },
+                {
+                  "name": "Навои",
+                  "data": "navoi",
+                  "prefix": null,
+                  "metadata": null,
+                  "parent_field_name": null,
+                  "field_data_order": 10
+                },
+                {
+                  "name": "Кашкадарья",
+                  "data": "kashkadarya",
+                  "prefix": null,
+                  "metadata": null,
+                  "parent_field_name": null,
+                  "field_data_order": 11
+                },
+                {
+                  "name": "Фергана",
+                  "data": "fergana",
+                  "prefix": null,
+                  "metadata": null,
+                  "parent_field_name": null,
+                  "field_data_order": 12
+                },
+                {
+                  "name": "Республика Каракалпакстан",
+                  "data": "karakalpakstan",
+                  "prefix": null,
+                  "metadata": null,
+                  "parent_field_name": null,
+                  "field_data_order": 13
+                },
+                {
+                  "name": "Хорезм",
+                  "data": "xorezm",
+                  "prefix": null,
+                  "metadata": null,
+                  "parent_field_name": null,
+                  "field_data_order": 14
+                }
+              ]
+            },
+            "field_usage": ["PAY", "INFO"],
+            "from_info": false,
+            "is_mandatory": true,
+            "should_validate": false,
+            "validate_with": null
+          },
+          {
+            "name": "amount",
+            "label": "Сумма",
+            "regex": "^[\\d]{1,8}$",
+            "type": "N",
+            "metadata": null,
+            "prefix": null,
+            "order": 4,
+            "regex_description": null,
+            "parent_field_value_prefix": null,
+            "parent_field_value_metadata": null,
+            "parent_field_name": null,
+            "field_data": {},
+            "field_usage": ["PAY"],
+            "from_info": false,
+            "is_mandatory": true,
+            "should_validate": false,
+            "validate_with": null
+          },
+          {
+            "name": "soato",
+            "label": "Административно-территориальный код",
+            "regex": null,
+            "type": "C",
+            "metadata": [""],
+            "prefix": null,
+            "order": 2,
+            "regex_description": null,
+            "parent_field_value_prefix": null,
+            "parent_field_value_metadata": null,
+            "parent_field_name": "city",
+            "field_data": {
+              "andijan": [
+                {
+                  "name": "г. Андижан",
+                  "data": "and_andijon_gop",
+                  "prefix": null,
+                  "metadata": "122",
+                  "parent_field_name": "city",
+                  "field_data_order": 1
+                },
+                {
+                  "name": "Ханабадский район",
+                  "data": "and_hanabad",
+                  "prefix": null,
+                  "metadata": "132",
+                  "parent_field_name": "city",
+                  "field_data_order": 2
+                },
+                {
+                  "name": "Карасуйский район",
+                  "data": "and_korasuv",
+                  "prefix": null,
+                  "metadata": "133",
+                  "parent_field_name": "city",
+                  "field_data_order": 3
+                },
+                {
+                  "name": "Бозский район",
+                  "data": "and_boz",
+                  "prefix": null,
+                  "metadata": "127",
+                  "parent_field_name": "city",
+                  "field_data_order": 4
+                },
+                {
+                  "name": "Булакбашинский район",
+                  "data": "and_bulokboshi",
+                  "prefix": null,
+                  "metadata": "128",
+                  "parent_field_name": "city",
+                  "field_data_order": 5
+                },
+                {
+                  "name": "Булакбашинский район - 2",
+                  "data": "and_bulokboshi_2",
+                  "prefix": null,
+                  "metadata": "121",
+                  "parent_field_name": "city",
+                  "field_data_order": 6
+                },
+                {
+                  "name": "Избасканский район",
+                  "data": "and_izboskan",
+                  "prefix": null,
+                  "metadata": "130",
+                  "parent_field_name": "city",
+                  "field_data_order": 7
+                },
+                {
+                  "name": "Кургантепинский район",
+                  "data": "and_kurgontepa",
+                  "prefix": null,
+                  "metadata": "131",
+                  "parent_field_name": "city",
+                  "field_data_order": 8
+                },
+                {
+                  "name": "Мархаматский район",
+                  "data": "and_marhamat",
+                  "prefix": null,
+                  "metadata": "134",
+                  "parent_field_name": "city",
+                  "field_data_order": 9
+                },
+                {
+                  "name": "Алтынкульский район",
+                  "data": "and_oltinkul",
+                  "prefix": null,
+                  "metadata": "135",
+                  "parent_field_name": "city",
+                  "field_data_order": 10
+                },
+                {
+                  "name": "Пахтаабадский район",
+                  "data": "and_pahtaobod",
+                  "prefix": null,
+                  "metadata": "136",
+                  "parent_field_name": "city",
+                  "field_data_order": 11
+                },
+                {
+                  "name": "Улугнорский район",
+                  "data": "and_ulugnor",
+                  "prefix": null,
+                  "metadata": "137",
+                  "parent_field_name": "city",
+                  "field_data_order": 12
+                },
+                {
+                  "name": "Андижанский район",
+                  "data": "and_andijon",
+                  "prefix": null,
+                  "metadata": "123",
+                  "parent_field_name": "city",
+                  "field_data_order": 13
+                },
+                {
+                  "name": "г. Асака",
+                  "data": "and_asaka_gop",
+                  "prefix": null,
+                  "metadata": "124",
+                  "parent_field_name": "city",
+                  "field_data_order": 14
+                },
+                {
+                  "name": "Асакинский район",
+                  "data": "and_asaka",
+                  "prefix": null,
+                  "metadata": "125",
+                  "parent_field_name": "city",
+                  "field_data_order": 15
+                },
+                {
+                  "name": "Балыкчинский район",
+                  "data": "and_balikchi",
+                  "prefix": null,
+                  "metadata": "126",
+                  "parent_field_name": "city",
+                  "field_data_order": 16
+                },
+                {
+                  "name": "Джалакудукский район",
+                  "data": "and_zhalolkuduk",
+                  "prefix": null,
+                  "metadata": "129",
+                  "parent_field_name": "city",
+                  "field_data_order": 17
+                },
+                {
+                  "name": "Ходжаабадский район",
+                  "data": "and_huzhaobod",
+                  "prefix": null,
+                  "metadata": "138",
+                  "parent_field_name": "city",
+                  "field_data_order": 18
+                },
+                {
+                  "name": "Шахриханский район",
+                  "data": "and_shahrixon",
+                  "prefix": null,
+                  "metadata": "139",
+                  "parent_field_name": "city",
+                  "field_data_order": 19
+                }
+              ],
+              "karakalpakstan": [
+                {
+                  "name": "г. Нукус",
+                  "data": "kar_nukus_gop",
+                  "prefix": null,
+                  "metadata": "208",
+                  "parent_field_name": "city",
+                  "field_data_order": 1
+                },
+                {
+                  "name": "Нукусский район",
+                  "data": "kar_nukus",
+                  "prefix": null,
+                  "metadata": "209",
+                  "parent_field_name": "city",
+                  "field_data_order": 2
+                },
+                {
+                  "name": "Кегейлийский район",
+                  "data": "kar_kegeli",
+                  "prefix": null,
+                  "metadata": "210",
+                  "parent_field_name": "city",
+                  "field_data_order": 3
+                },
+                {
+                  "name": "Чинбайский район",
+                  "data": "kar_chimba",
+                  "prefix": null,
+                  "metadata": "211",
+                  "parent_field_name": "city",
+                  "field_data_order": 4
+                },
+                {
+                  "name": "Кара-Узякский район",
+                  "data": "kar_karauzyak",
+                  "prefix": null,
+                  "metadata": "212",
+                  "parent_field_name": "city",
+                  "field_data_order": 5
+                },
+                {
+                  "name": "Тахтакупырский район",
+                  "data": "kar_tahtakupr",
+                  "prefix": null,
+                  "metadata": "213",
+                  "parent_field_name": "city",
+                  "field_data_order": 6
+                },
+                {
+                  "name": "Ходжейлинский район",
+                  "data": "kar_hodzheli",
+                  "prefix": null,
+                  "metadata": "214",
+                  "parent_field_name": "city",
+                  "field_data_order": 7
+                },
+                {
+                  "name": "Шуманайский район",
+                  "data": "kar_shumana",
+                  "prefix": null,
+                  "metadata": "215",
+                  "parent_field_name": "city",
+                  "field_data_order": 8
+                },
+                {
+                  "name": "Канлыкульский район",
+                  "data": "kar_kanlkul",
+                  "prefix": null,
+                  "metadata": "216",
+                  "parent_field_name": "city",
+                  "field_data_order": 9
+                },
+                {
+                  "name": "Тахиаташский район",
+                  "data": "kar_tahiatash",
+                  "prefix": null,
+                  "metadata": "217",
+                  "parent_field_name": "city",
+                  "field_data_order": 10
+                },
+                {
+                  "name": "Кунградский район",
+                  "data": "kar_kungrad",
+                  "prefix": null,
+                  "metadata": "218",
+                  "parent_field_name": "city",
+                  "field_data_order": 11
+                },
+                {
+                  "name": "Муйнакский район",
+                  "data": "kar_munak",
+                  "prefix": null,
+                  "metadata": "219",
+                  "parent_field_name": "city",
+                  "field_data_order": 12
+                },
+                {
+                  "name": "Амурдарьинский район",
+                  "data": "kar_amudarin",
+                  "prefix": null,
+                  "metadata": "220",
+                  "parent_field_name": "city",
+                  "field_data_order": 13
+                },
+                {
+                  "name": "Турткульский район",
+                  "data": "kar_turtkul",
+                  "prefix": null,
+                  "metadata": "221",
+                  "parent_field_name": "city",
+                  "field_data_order": 14
+                },
+                {
+                  "name": "Элликкалинский  район",
+                  "data": "kar_ellikkalin",
+                  "prefix": null,
+                  "metadata": "222",
+                  "parent_field_name": "city",
+                  "field_data_order": 15
+                },
+                {
+                  "name": "Берунийский район",
+                  "data": "kar_beruni",
+                  "prefix": null,
+                  "metadata": "223",
+                  "parent_field_name": "city",
+                  "field_data_order": 16
+                },
+                {
+                  "name": "Бозатаунский район",
+                  "data": "kar_buzatau",
+                  "prefix": null,
+                  "metadata": "224",
+                  "parent_field_name": "city",
+                  "field_data_order": 17
+                },
+                {
+                  "name": "г.Халкабад",
+                  "data": "kar_halkabad",
+                  "prefix": null,
+                  "metadata": "225",
+                  "parent_field_name": "city",
+                  "field_data_order": 18
+                }
+              ],
+              "tashkent_region": [
+                {
+                  "name": "Янгиюльский район",
+                  "data": "tas_r_yangiyol",
+                  "prefix": null,
+                  "metadata": "41",
+                  "parent_field_name": "city",
+                  "field_data_order": 1
+                },
+                {
+                  "name": "Алмалыкский район",
+                  "data": "tas_r_talmalyk",
+                  "prefix": null,
+                  "metadata": "23",
+                  "parent_field_name": "city",
+                  "field_data_order": 2
+                },
+                {
+                  "name": "г. Ангрен",
+                  "data": "tas_r_angren",
+                  "prefix": null,
+                  "metadata": "24",
+                  "parent_field_name": "city",
+                  "field_data_order": 3
+                },
+                {
+                  "name": "г. Красногорск",
+                  "data": "tas_r_krasnogor",
+                  "prefix": null,
+                  "metadata": "42",
+                  "parent_field_name": "city",
+                  "field_data_order": 4
+                },
+                {
+                  "name": "г. Бекабад",
+                  "data": "tas_r_bekabad_gop",
+                  "prefix": null,
+                  "metadata": "27",
+                  "parent_field_name": "city",
+                  "field_data_order": 5
+                },
+                {
+                  "name": "г. Чирчик",
+                  "data": "tas_r_chirchik",
+                  "prefix": null,
+                  "metadata": "38",
+                  "parent_field_name": "city",
+                  "field_data_order": 6
+                },
+                {
+                  "name": "Оккургансакий район",
+                  "data": "tas_r_akkurgan",
+                  "prefix": null,
+                  "metadata": "26",
+                  "parent_field_name": "city",
+                  "field_data_order": 7
+                },
+                {
+                  "name": "Ахангаранский район",
+                  "data": "tas_r_ahangaran",
+                  "prefix": null,
+                  "metadata": "25",
+                  "parent_field_name": "city",
+                  "field_data_order": 8
+                },
+                {
+                  "name": "Бостанлыкский район",
+                  "data": "tas_r_bostanlik",
+                  "prefix": null,
+                  "metadata": "29",
+                  "parent_field_name": "city",
+                  "field_data_order": 9
+                },
+                {
+                  "name": "Букинский район",
+                  "data": "tas_r_buka",
+                  "prefix": null,
+                  "metadata": "28",
+                  "parent_field_name": "city",
+                  "field_data_order": 10
+                },
+                {
+                  "name": "Зангиатинский район (эшонгузар)",
+                  "data": "tas_r_zangiat",
+                  "prefix": null,
+                  "metadata": "31",
+                  "parent_field_name": "city",
+                  "field_data_order": 11
+                },
+                {
+                  "name": "Ташкентский район (келес)",
+                  "data": "tas_r_keles",
+                  "prefix": null,
+                  "metadata": "32",
+                  "parent_field_name": "city",
+                  "field_data_order": 12
+                },
+                {
+                  "name": "Бекабадский район",
+                  "data": "tas_r_bekabad",
+                  "prefix": null,
+                  "metadata": "30",
+                  "parent_field_name": "city",
+                  "field_data_order": 13
+                },
+                {
+                  "name": "Кибрайский район",
+                  "data": "tas_r_qibray",
+                  "prefix": null,
+                  "metadata": "33",
+                  "parent_field_name": "city",
+                  "field_data_order": 14
+                },
+                {
+                  "name": "Паркентский район",
+                  "data": "tas_r_parkent",
+                  "prefix": null,
+                  "metadata": "34",
+                  "parent_field_name": "city",
+                  "field_data_order": 15
+                },
+                {
+                  "name": "Куйичирчикский район (дустабад)",
+                  "data": "tas_r_kuichirchik",
+                  "prefix": null,
+                  "metadata": "36",
+                  "parent_field_name": "city",
+                  "field_data_order": 16
+                },
+                {
+                  "name": "Пскентский район",
+                  "data": "tas_r_pskent",
+                  "prefix": null,
+                  "metadata": "35",
+                  "parent_field_name": "city",
+                  "field_data_order": 17
+                },
+                {
+                  "name": "Уртачирчикский район (карасу)",
+                  "data": "tas_r_urtachirchik",
+                  "prefix": null,
+                  "metadata": "37",
+                  "parent_field_name": "city",
+                  "field_data_order": 18
+                },
+                {
+                  "name": "Чиназский район",
+                  "data": "tas_r_chinaz",
+                  "prefix": null,
+                  "metadata": "39",
+                  "parent_field_name": "city",
+                  "field_data_order": 19
+                },
+                {
+                  "name": "Юкоричирчикский район (янгибазар)",
+                  "data": "tas_r_ukorichirchik",
+                  "prefix": null,
+                  "metadata": "40",
+                  "parent_field_name": "city",
+                  "field_data_order": 20
+                },
+                {
+                  "name": "г. Ахангаран",
+                  "data": "tas_r_oxangaron_gop",
+                  "prefix": null,
+                  "metadata": "21",
+                  "parent_field_name": "city",
+                  "field_data_order": 21
+                },
+                {
+                  "name": "г. Нурафшан",
+                  "data": "tas_r_nurafshon_gop",
+                  "prefix": null,
+                  "metadata": "22",
+                  "parent_field_name": "city",
+                  "field_data_order": 22
+                },
+                {
+                  "name": "г. Янгиюль",
+                  "data": "tas_r_yangiol_gop",
+                  "prefix": null,
+                  "metadata": "43",
+                  "parent_field_name": "city",
+                  "field_data_order": 23
+                }
+              ],
+              "namangan": [
+                {
+                  "name": "Мингбулакский район",
+                  "data": "nam_mingbulak",
+                  "prefix": null,
+                  "metadata": "117",
+                  "parent_field_name": "city",
+                  "field_data_order": 1
+                },
+                {
+                  "name": "Касансайский район",
+                  "data": "nam_kasansa",
+                  "prefix": null,
+                  "metadata": "110",
+                  "parent_field_name": "city",
+                  "field_data_order": 2
+                },
+                {
+                  "name": "Нарынский район",
+                  "data": "nam_narn",
+                  "prefix": null,
+                  "metadata": "111",
+                  "parent_field_name": "city",
+                  "field_data_order": 3
+                },
+                {
+                  "name": "Папский район",
+                  "data": "nam_pap",
+                  "prefix": null,
+                  "metadata": "116",
+                  "parent_field_name": "city",
+                  "field_data_order": 4
+                },
+                {
+                  "name": "Туракурганский район",
+                  "data": "nam_turakurgan",
+                  "prefix": null,
+                  "metadata": "115",
+                  "parent_field_name": "city",
+                  "field_data_order": 5
+                },
+                {
+                  "name": "Уйчинский район",
+                  "data": "nam_uychi",
+                  "prefix": null,
+                  "metadata": "119",
+                  "parent_field_name": "city",
+                  "field_data_order": 6
+                },
+                {
+                  "name": "Учкурганский район",
+                  "data": "nam_uchkurgan",
+                  "prefix": null,
+                  "metadata": "112",
+                  "parent_field_name": "city",
+                  "field_data_order": 7
+                },
+                {
+                  "name": "Чустский район",
+                  "data": "nam_chust",
+                  "prefix": null,
+                  "metadata": "114",
+                  "parent_field_name": "city",
+                  "field_data_order": 8
+                },
+                {
+                  "name": "Янгикурганский район",
+                  "data": "nam_yangikurgan",
+                  "prefix": null,
+                  "metadata": "120",
+                  "parent_field_name": "city",
+                  "field_data_order": 9
+                },
+                {
+                  "name": "Наманганский район",
+                  "data": "nam_namangan",
+                  "prefix": null,
+                  "metadata": "118",
+                  "parent_field_name": "city",
+                  "field_data_order": 10
+                },
+                {
+                  "name": "Чартакский район",
+                  "data": "nam_chartak",
+                  "prefix": null,
+                  "metadata": "113",
+                  "parent_field_name": "city",
+                  "field_data_order": 11
+                },
+                {
+                  "name": "г. Наманган",
+                  "data": "nam_namangan_gor",
+                  "prefix": null,
+                  "metadata": "108",
+                  "parent_field_name": "city",
+                  "field_data_order": 12
+                },
+                {
+                  "name": "г. Наманган (2-база)",
+                  "data": "nam_namangan_gor_two",
+                  "prefix": null,
+                  "metadata": "109",
+                  "parent_field_name": "city",
+                  "field_data_order": 13
+                }
+              ],
+              "navoi": [
+                {
+                  "name": "г. Навои",
+                  "data": "nav_navoi",
+                  "prefix": null,
+                  "metadata": "190",
+                  "parent_field_name": "city",
+                  "field_data_order": 1
+                },
+                {
+                  "name": "г.Зарафшан",
+                  "data": "nav_zaravshan",
+                  "prefix": null,
+                  "metadata": "186",
+                  "parent_field_name": "city",
+                  "field_data_order": 2
+                },
+                {
+                  "name": "Карманинский район",
+                  "data": "nav_karmana",
+                  "prefix": null,
+                  "metadata": "187",
+                  "parent_field_name": "city",
+                  "field_data_order": 3
+                },
+                {
+                  "name": "Канимехский район",
+                  "data": "nav_kanimeh",
+                  "prefix": null,
+                  "metadata": "189",
+                  "parent_field_name": "city",
+                  "field_data_order": 4
+                },
+                {
+                  "name": "Кызылтепинский район",
+                  "data": "nav_qiziltepa",
+                  "prefix": null,
+                  "metadata": "188",
+                  "parent_field_name": "city",
+                  "field_data_order": 5
+                },
+                {
+                  "name": "Навбахорский район",
+                  "data": "nav_navbaxor",
+                  "prefix": null,
+                  "metadata": "191",
+                  "parent_field_name": "city",
+                  "field_data_order": 6
+                },
+                {
+                  "name": "Нуратинский район",
+                  "data": "nav_nuratin",
+                  "prefix": null,
+                  "metadata": "192",
+                  "parent_field_name": "city",
+                  "field_data_order": 7
+                },
+                {
+                  "name": "Хатырчинский район",
+                  "data": "nav_hotirchi",
+                  "prefix": null,
+                  "metadata": "193",
+                  "parent_field_name": "city",
+                  "field_data_order": 8
+                },
+                {
+                  "name": "Учкудукский район",
+                  "data": "nav_uchkuduk",
+                  "prefix": null,
+                  "metadata": "229",
+                  "parent_field_name": "city",
+                  "field_data_order": 9
+                }
+              ],
+              "buxara": [
+                {
+                  "name": "Алатский район",
+                  "data": "bux_alat",
+                  "prefix": null,
+                  "metadata": "183",
+                  "parent_field_name": "city",
+                  "field_data_order": 1
+                },
+                {
+                  "name": "Вобкентский район",
+                  "data": "bux_vabkent",
+                  "prefix": null,
+                  "metadata": "179",
+                  "parent_field_name": "city",
+                  "field_data_order": 2
+                },
+                {
+                  "name": "Гиждуванский район",
+                  "data": "bux_gizhduvan",
+                  "prefix": null,
+                  "metadata": "176",
+                  "parent_field_name": "city",
+                  "field_data_order": 3
+                },
+                {
+                  "name": "Бухарский район",
+                  "data": "bux_region",
+                  "prefix": null,
+                  "metadata": "177",
+                  "parent_field_name": "city",
+                  "field_data_order": 4
+                },
+                {
+                  "name": "Каракульский район",
+                  "data": "bux_karakul",
+                  "prefix": null,
+                  "metadata": "182",
+                  "parent_field_name": "city",
+                  "field_data_order": 5
+                },
+                {
+                  "name": "Ромитанский район",
+                  "data": "bux_romitan",
+                  "prefix": null,
+                  "metadata": "174",
+                  "parent_field_name": "city",
+                  "field_data_order": 6
+                },
+                {
+                  "name": "Жондорский район",
+                  "data": "bux_zhondop",
+                  "prefix": null,
+                  "metadata": "178",
+                  "parent_field_name": "city",
+                  "field_data_order": 7
+                },
+                {
+                  "name": "Шафирканский район",
+                  "data": "bux_shafirkan",
+                  "prefix": null,
+                  "metadata": "181",
+                  "parent_field_name": "city",
+                  "field_data_order": 8
+                },
+                {
+                  "name": "Пешкунский район",
+                  "data": "bux_peshkun",
+                  "prefix": null,
+                  "metadata": "180",
+                  "parent_field_name": "city",
+                  "field_data_order": 9
+                },
+                {
+                  "name": "Караулбазарсакий район",
+                  "data": "bux_karaulbazar",
+                  "prefix": null,
+                  "metadata": "184",
+                  "parent_field_name": "city",
+                  "field_data_order": 10
+                },
+                {
+                  "name": "Каганский район",
+                  "data": "bux_kagan",
+                  "prefix": null,
+                  "metadata": "175",
+                  "parent_field_name": "city",
+                  "field_data_order": 11
+                },
+                {
+                  "name": "г. Бухара",
+                  "data": "bux_gop",
+                  "prefix": null,
+                  "metadata": "172",
+                  "parent_field_name": "city",
+                  "field_data_order": 12
+                }
+              ],
+              "samarkand": [
+                {
+                  "name": "Гузалкентский район",
+                  "data": "sam_guzalkent",
+                  "prefix": null,
+                  "metadata": "228",
+                  "parent_field_name": "city",
+                  "field_data_order": 1
+                },
+                {
+                  "name": "г.Самарканд",
+                  "data": "sam_samarkand_gop",
+                  "prefix": null,
+                  "metadata": "71",
+                  "parent_field_name": "city",
+                  "field_data_order": 2
+                },
+                {
+                  "name": "Самаркандский район",
+                  "data": "sam_samarkand",
+                  "prefix": null,
+                  "metadata": "72",
+                  "parent_field_name": "city",
+                  "field_data_order": 3
+                },
+                {
+                  "name": "Булунгурский район",
+                  "data": "sam_bulungur",
+                  "prefix": null,
+                  "metadata": "73",
+                  "parent_field_name": "city",
+                  "field_data_order": 4
+                },
+                {
+                  "name": "Джамбайский район",
+                  "data": "sam_dzhamba",
+                  "prefix": null,
+                  "metadata": "74",
+                  "parent_field_name": "city",
+                  "field_data_order": 5
+                },
+                {
+                  "name": "Пасдаргомский район",
+                  "data": "sam_pastdargom",
+                  "prefix": null,
+                  "metadata": "75",
+                  "parent_field_name": "city",
+                  "field_data_order": 6
+                },
+                {
+                  "name": "Иштиханский район",
+                  "data": "sam_ishthan",
+                  "prefix": null,
+                  "metadata": "76",
+                  "parent_field_name": "city",
+                  "field_data_order": 7
+                },
+                {
+                  "name": "г.Каттакурган",
+                  "data": "sam_kattakurgan_gop",
+                  "prefix": null,
+                  "metadata": "77",
+                  "parent_field_name": "city",
+                  "field_data_order": 8
+                },
+                {
+                  "name": "Нурабадский район",
+                  "data": "sam_nurabad",
+                  "prefix": null,
+                  "metadata": "78",
+                  "parent_field_name": "city",
+                  "field_data_order": 9
+                },
+                {
+                  "name": "Акдарьинский район",
+                  "data": "sam_akdarin",
+                  "prefix": null,
+                  "metadata": "79",
+                  "parent_field_name": "city",
+                  "field_data_order": 10
+                },
+                {
+                  "name": "Нарпайский район",
+                  "data": "sam_narpa",
+                  "prefix": null,
+                  "metadata": "80",
+                  "parent_field_name": "city",
+                  "field_data_order": 11
+                },
+                {
+                  "name": "Пайарыкский район",
+                  "data": "sam_payaryk",
+                  "prefix": null,
+                  "metadata": "81",
+                  "parent_field_name": "city",
+                  "field_data_order": 12
+                },
+                {
+                  "name": "Каттакурганский район",
+                  "data": "sam_kattakurgan",
+                  "prefix": null,
+                  "metadata": "82",
+                  "parent_field_name": "city",
+                  "field_data_order": 13
+                },
+                {
+                  "name": "Пахтачинский район",
+                  "data": "sam_pahtachi",
+                  "prefix": null,
+                  "metadata": "83",
+                  "parent_field_name": "city",
+                  "field_data_order": 14
+                },
+                {
+                  "name": "Тайлакский район",
+                  "data": "sam_talyak",
+                  "prefix": null,
+                  "metadata": "84",
+                  "parent_field_name": "city",
+                  "field_data_order": 15
+                },
+                {
+                  "name": "Ургутский район",
+                  "data": "sam_urgut",
+                  "prefix": null,
+                  "metadata": "85",
+                  "parent_field_name": "city",
+                  "field_data_order": 16
+                },
+                {
+                  "name": "Кушрабатский район",
+                  "data": "sam_koshrabad",
+                  "prefix": null,
+                  "metadata": "86",
+                  "parent_field_name": "city",
+                  "field_data_order": 17
+                },
+                {
+                  "name": "Челекский район",
+                  "data": "sam_chelek",
+                  "prefix": null,
+                  "metadata": "87",
+                  "parent_field_name": "city",
+                  "field_data_order": 18
+                }
+              ],
+              "xorezm": [
+                {
+                  "name": "г. Ургенч",
+                  "data": "xor_urgench_gop",
+                  "prefix": null,
+                  "metadata": "195",
+                  "parent_field_name": "city",
+                  "field_data_order": 1
+                },
+                {
+                  "name": "Гурленский район",
+                  "data": "xor_gurlen",
+                  "prefix": null,
+                  "metadata": "203",
+                  "parent_field_name": "city",
+                  "field_data_order": 2
+                },
+                {
+                  "name": "Багатский район",
+                  "data": "xor_bagat",
+                  "prefix": null,
+                  "metadata": "200",
+                  "parent_field_name": "city",
+                  "field_data_order": 3
+                },
+                {
+                  "name": "Хазараспский район",
+                  "data": "xor_hazarasp",
+                  "prefix": null,
+                  "metadata": "205",
+                  "parent_field_name": "city",
+                  "field_data_order": 4
+                },
+                {
+                  "name": "Ханкинский район",
+                  "data": "xor_khanka",
+                  "prefix": null,
+                  "metadata": "198",
+                  "parent_field_name": "city",
+                  "field_data_order": 5
+                },
+                {
+                  "name": "Янгиарыкский район",
+                  "data": "xor_yangiark",
+                  "prefix": null,
+                  "metadata": "201",
+                  "parent_field_name": "city",
+                  "field_data_order": 6
+                },
+                {
+                  "name": "Кошкупырский район",
+                  "data": "xor_koshkupr",
+                  "prefix": null,
+                  "metadata": "204",
+                  "parent_field_name": "city",
+                  "field_data_order": 7
+                },
+                {
+                  "name": "Шаватский район",
+                  "data": "xor_shavat",
+                  "prefix": null,
+                  "metadata": "199",
+                  "parent_field_name": "city",
+                  "field_data_order": 8
+                },
+                {
+                  "name": "Ургенчский район",
+                  "data": "xor_urgench",
+                  "prefix": null,
+                  "metadata": "196",
+                  "parent_field_name": "city",
+                  "field_data_order": 9
+                },
+                {
+                  "name": "Янгибазарский район",
+                  "data": "xor_yangibazar",
+                  "prefix": null,
+                  "metadata": "202",
+                  "parent_field_name": "city",
+                  "field_data_order": 10
+                },
+                {
+                  "name": "Хивинский район",
+                  "data": "xor_xiva",
+                  "prefix": null,
+                  "metadata": "197",
+                  "parent_field_name": "city",
+                  "field_data_order": 11
+                },
+                {
+                  "name": "г. Хива ",
+                  "data": "xor_xiva_gop",
+                  "prefix": null,
+                  "metadata": "207",
+                  "parent_field_name": "city",
+                  "field_data_order": 12
+                },
+                {
+                  "name": "Тупраккалинский район",
+                  "data": "xor_tuprakkala",
+                  "prefix": null,
+                  "metadata": "230",
+                  "parent_field_name": "city",
+                  "field_data_order": 13
+                }
+              ],
+              "fergana": [
+                {
+                  "name": "г. Каканд",
+                  "data": "fer_kokand",
+                  "prefix": null,
+                  "metadata": "91",
+                  "parent_field_name": "city",
+                  "field_data_order": 1
+                },
+                {
+                  "name": "г. Маргилан",
+                  "data": "fer_margilon",
+                  "prefix": null,
+                  "metadata": "88",
+                  "parent_field_name": "city",
+                  "field_data_order": 2
+                },
+                {
+                  "name": "г. Фергана",
+                  "data": "fer_fargona_gop",
+                  "prefix": null,
+                  "metadata": "89",
+                  "parent_field_name": "city",
+                  "field_data_order": 3
+                },
+                {
+                  "name": "г. Кувасай",
+                  "data": "fer_quvasoy",
+                  "prefix": null,
+                  "metadata": "90",
+                  "parent_field_name": "city",
+                  "field_data_order": 4
+                },
+                {
+                  "name": "Бешарыкский район",
+                  "data": "fer_beshark",
+                  "prefix": null,
+                  "metadata": "93",
+                  "parent_field_name": "city",
+                  "field_data_order": 5
+                },
+                {
+                  "name": "Багдадский район",
+                  "data": "fer_bagdad",
+                  "prefix": null,
+                  "metadata": "92",
+                  "parent_field_name": "city",
+                  "field_data_order": 6
+                },
+                {
+                  "name": "Бувайдийский район",
+                  "data": "fer_buvaydin",
+                  "prefix": null,
+                  "metadata": "94",
+                  "parent_field_name": "city",
+                  "field_data_order": 7
+                },
+                {
+                  "name": "Дангаринский район",
+                  "data": "fer_dangarin",
+                  "prefix": null,
+                  "metadata": "95",
+                  "parent_field_name": "city",
+                  "field_data_order": 8
+                },
+                {
+                  "name": "Язвинский район",
+                  "data": "fer_yazyavan",
+                  "prefix": null,
+                  "metadata": "96",
+                  "parent_field_name": "city",
+                  "field_data_order": 9
+                },
+                {
+                  "name": "Кувинский район",
+                  "data": "fer_quva",
+                  "prefix": null,
+                  "metadata": "106",
+                  "parent_field_name": "city",
+                  "field_data_order": 10
+                },
+                {
+                  "name": "Алтыарыкский район",
+                  "data": "fer_altark",
+                  "prefix": null,
+                  "metadata": "97",
+                  "parent_field_name": "city",
+                  "field_data_order": 11
+                },
+                {
+                  "name": "Куштепинский район",
+                  "data": "fer_kushtep",
+                  "prefix": null,
+                  "metadata": "98",
+                  "parent_field_name": "city",
+                  "field_data_order": 12
+                },
+                {
+                  "name": "Риштанский район",
+                  "data": "fer_rishtan",
+                  "prefix": null,
+                  "metadata": "99",
+                  "parent_field_name": "city",
+                  "field_data_order": 13
+                },
+                {
+                  "name": "Сохский район",
+                  "data": "fer_soh",
+                  "prefix": null,
+                  "metadata": "100",
+                  "parent_field_name": "city",
+                  "field_data_order": 14
+                },
+                {
+                  "name": "Ташлакский район",
+                  "data": "fer_tashlak",
+                  "prefix": null,
+                  "metadata": "101",
+                  "parent_field_name": "city",
+                  "field_data_order": 15
+                },
+                {
+                  "name": "Узбекистанский район",
+                  "data": "fer_uzbekistan",
+                  "prefix": null,
+                  "metadata": "105",
+                  "parent_field_name": "city",
+                  "field_data_order": 16
+                },
+                {
+                  "name": "Учкуприкский район",
+                  "data": "fer_uchkuprik",
+                  "prefix": null,
+                  "metadata": "102",
+                  "parent_field_name": "city",
+                  "field_data_order": 17
+                },
+                {
+                  "name": "Ферганский район",
+                  "data": "fer_fargona",
+                  "prefix": null,
+                  "metadata": "103",
+                  "parent_field_name": "city",
+                  "field_data_order": 18
+                },
+                {
+                  "name": "Фуркатский район",
+                  "data": "fer_furkat",
+                  "prefix": null,
+                  "metadata": "104",
+                  "parent_field_name": "city",
+                  "field_data_order": 19
+                }
+              ],
+              "sirdarya": [
+                {
+                  "name": "г. Гулистан",
+                  "data": "srd_gulistan_gop",
+                  "prefix": null,
+                  "metadata": "44",
+                  "parent_field_name": "city",
+                  "field_data_order": 1
+                },
+                {
+                  "name": "г. Янгиер",
+                  "data": "srd_yangiep",
+                  "prefix": null,
+                  "metadata": "45",
+                  "parent_field_name": "city",
+                  "field_data_order": 2
+                },
+                {
+                  "name": "г. Ширин",
+                  "data": "srd_shipin",
+                  "prefix": null,
+                  "metadata": "46",
+                  "parent_field_name": "city",
+                  "field_data_order": 3
+                },
+                {
+                  "name": "Акалтынский район",
+                  "data": "srd_akaltn",
+                  "prefix": null,
+                  "metadata": "47",
+                  "parent_field_name": "city",
+                  "field_data_order": 4
+                },
+                {
+                  "name": "Баяутский район",
+                  "data": "srd_bayaut",
+                  "prefix": null,
+                  "metadata": "48",
+                  "parent_field_name": "city",
+                  "field_data_order": 5
+                },
+                {
+                  "name": "Гулистанский район",
+                  "data": "srd_gulistan",
+                  "prefix": null,
+                  "metadata": "49",
+                  "parent_field_name": "city",
+                  "field_data_order": 6
+                },
+                {
+                  "name": "Сардобинский район",
+                  "data": "srd_sardoba",
+                  "prefix": null,
+                  "metadata": "226",
+                  "parent_field_name": "city",
+                  "field_data_order": 7
+                },
+                {
+                  "name": "Сирдарьинский район",
+                  "data": "srd_srdarin",
+                  "prefix": null,
+                  "metadata": "50",
+                  "parent_field_name": "city",
+                  "field_data_order": 8
+                },
+                {
+                  "name": "г. Бахт",
+                  "data": "srd_baht",
+                  "prefix": null,
+                  "metadata": "51",
+                  "parent_field_name": "city",
+                  "field_data_order": 9
+                },
+                {
+                  "name": "Сайхунабадский район",
+                  "data": "srd_sahunabad",
+                  "prefix": null,
+                  "metadata": "52",
+                  "parent_field_name": "city",
+                  "field_data_order": 10
+                },
+                {
+                  "name": "Хавастский район",
+                  "data": "srd_havast",
+                  "prefix": null,
+                  "metadata": "53",
+                  "parent_field_name": "city",
+                  "field_data_order": 11
+                },
+                {
+                  "name": "Мирзаабадский район",
+                  "data": "srd_mirzaabad",
+                  "prefix": null,
+                  "metadata": "54",
+                  "parent_field_name": "city",
+                  "field_data_order": 12
+                },
+                {
+                  "name": "Мехнатабад участок",
+                  "data": "srd_mehnatobod",
+                  "prefix": null,
+                  "metadata": "55",
+                  "parent_field_name": "city",
+                  "field_data_order": 13
+                }
+              ],
+              "kashkadarya": [
+                {
+                  "name": "г. Карши",
+                  "data": "kas_karshi_gop",
+                  "prefix": null,
+                  "metadata": "141",
+                  "parent_field_name": "city",
+                  "field_data_order": 1
+                },
+                {
+                  "name": "Каршинский район (Бешкент)",
+                  "data": "kas_karshi",
+                  "prefix": null,
+                  "metadata": "148",
+                  "parent_field_name": "city",
+                  "field_data_order": 2
+                },
+                {
+                  "name": "Гузарский район",
+                  "data": "kas_guzar",
+                  "prefix": null,
+                  "metadata": "147",
+                  "parent_field_name": "city",
+                  "field_data_order": 3
+                },
+                {
+                  "name": "Дехканабадский район",
+                  "data": "kas_dehkanabad",
+                  "prefix": null,
+                  "metadata": "154",
+                  "parent_field_name": "city",
+                  "field_data_order": 4
+                },
+                {
+                  "name": "Камашинский район",
+                  "data": "kas_qamashin",
+                  "prefix": null,
+                  "metadata": "146",
+                  "parent_field_name": "city",
+                  "field_data_order": 5
+                },
+                {
+                  "name": "Касанский район",
+                  "data": "kas_kasan",
+                  "prefix": null,
+                  "metadata": "150",
+                  "parent_field_name": "city",
+                  "field_data_order": 6
+                },
+                {
+                  "name": "Чиракчинский район",
+                  "data": "kas_chiroqchin",
+                  "prefix": null,
+                  "metadata": "145",
+                  "parent_field_name": "city",
+                  "field_data_order": 7
+                },
+                {
+                  "name": "Яккабагский район",
+                  "data": "kas_yakkabag",
+                  "prefix": null,
+                  "metadata": "144",
+                  "parent_field_name": "city",
+                  "field_data_order": 8
+                },
+                {
+                  "name": "Китабский район",
+                  "data": "kas_kitab",
+                  "prefix": null,
+                  "metadata": "143",
+                  "parent_field_name": "city",
+                  "field_data_order": 9
+                },
+                {
+                  "name": "Касбийский район",
+                  "data": "kas_kesbi",
+                  "prefix": null,
+                  "metadata": "151",
+                  "parent_field_name": "city",
+                  "field_data_order": 10
+                },
+                {
+                  "name": "Нишанский район",
+                  "data": "kas_nishan",
+                  "prefix": null,
+                  "metadata": "149",
+                  "parent_field_name": "city",
+                  "field_data_order": 11
+                },
+                {
+                  "name": "Мубарекский район",
+                  "data": "kas_mubarek",
+                  "prefix": null,
+                  "metadata": "153",
+                  "parent_field_name": "city",
+                  "field_data_order": 12
+                },
+                {
+                  "name": "Шахрисабзский район",
+                  "data": "kas_shahrisabz",
+                  "prefix": null,
+                  "metadata": "142",
+                  "parent_field_name": "city",
+                  "field_data_order": 13
+                },
+                {
+                  "name": "Миришкорский район",
+                  "data": "kas_mirishkor",
+                  "prefix": null,
+                  "metadata": "152",
+                  "parent_field_name": "city",
+                  "field_data_order": 14
+                },
+                {
+                  "name": "г. Шахризабз",
+                  "data": "kas_shahrisabz_gop",
+                  "prefix": null,
+                  "metadata": "155",
+                  "parent_field_name": "city",
+                  "field_data_order": 15
+                }
+              ],
+              "tashkent": [
+                {
+                  "name": "Учтепинский район",
+                  "data": "tas_uchtepa",
+                  "prefix": null,
+                  "metadata": "9",
+                  "parent_field_name": "city",
+                  "field_data_order": 1
+                },
+                {
+                  "name": "Бектемирский район",
+                  "data": "tas_bektemir",
+                  "prefix": null,
+                  "metadata": "13",
+                  "parent_field_name": "city",
+                  "field_data_order": 2
+                },
+                {
+                  "name": "Юнусабадский район",
+                  "data": "tas_yunusabad",
+                  "prefix": null,
+                  "metadata": "7",
+                  "parent_field_name": "city",
+                  "field_data_order": 3
+                },
+                {
+                  "name": "Мирзо Улугбекский район",
+                  "data": "tas_mirzo_ulugbek",
+                  "prefix": null,
+                  "metadata": "4",
+                  "parent_field_name": "city",
+                  "field_data_order": 4
+                },
+                {
+                  "name": "Мирабадский район",
+                  "data": "tas_mirabad",
+                  "prefix": null,
+                  "metadata": "3",
+                  "parent_field_name": "city",
+                  "field_data_order": 5
+                },
+                {
+                  "name": "Шайхантахурский район",
+                  "data": "tas_shaykhantakhur",
+                  "prefix": null,
+                  "metadata": "12",
+                  "parent_field_name": "city",
+                  "field_data_order": 6
+                },
+                {
+                  "name": "Алмазарский район",
+                  "data": "tas_almazar",
+                  "prefix": null,
+                  "metadata": "6",
+                  "parent_field_name": "city",
+                  "field_data_order": 7
+                },
+                {
+                  "name": "Сергелийский район",
+                  "data": "tas_sergeli",
+                  "prefix": null,
+                  "metadata": "10",
+                  "parent_field_name": "city",
+                  "field_data_order": 8
+                },
+                {
+                  "name": "Яккасарайский район",
+                  "data": "tas_yakkasaray",
+                  "prefix": null,
+                  "metadata": "5",
+                  "parent_field_name": "city",
+                  "field_data_order": 9
+                },
+                {
+                  "name": "Яшнабадский район",
+                  "data": "tas_yashnabad",
+                  "prefix": null,
+                  "metadata": "11",
+                  "parent_field_name": "city",
+                  "field_data_order": 10
+                },
+                {
+                  "name": "Чиланзарский район",
+                  "data": "tas_chilanzar",
+                  "prefix": null,
+                  "metadata": "8",
+                  "parent_field_name": "city",
+                  "field_data_order": 11
+                },
+                {
+                  "name": "Янгихаётский район",
+                  "data": "tas_yangi_khayot",
+                  "prefix": null,
+                  "metadata": "231",
+                  "parent_field_name": "city",
+                  "field_data_order": 12
+                }
+              ],
+              "djizakh": [
+                {
+                  "name": "г. Джизак",
+                  "data": "dzh_dzhizak",
+                  "prefix": null,
+                  "metadata": "56",
+                  "parent_field_name": "city",
+                  "field_data_order": 1
+                },
+                {
+                  "name": "Пахтакорский район",
+                  "data": "dzh_pahtakor",
+                  "prefix": null,
+                  "metadata": "60",
+                  "parent_field_name": "city",
+                  "field_data_order": 2
+                },
+                {
+                  "name": "Галляаральский район",
+                  "data": "dzh_gallyaaral",
+                  "prefix": null,
+                  "metadata": "58",
+                  "parent_field_name": "city",
+                  "field_data_order": 3
+                },
+                {
+                  "name": "Дустликский район",
+                  "data": "dzh_dustlik",
+                  "prefix": null,
+                  "metadata": "62",
+                  "parent_field_name": "city",
+                  "field_data_order": 4
+                },
+                {
+                  "name": "Мирзачульский район ",
+                  "data": "dzh_mirzachul",
+                  "prefix": null,
+                  "metadata": "64",
+                  "parent_field_name": "city",
+                  "field_data_order": 5
+                },
+                {
+                  "name": "Зааминский район",
+                  "data": "dzh_zomin",
+                  "prefix": null,
+                  "metadata": "66",
+                  "parent_field_name": "city",
+                  "field_data_order": 6
+                },
+                {
+                  "name": "Даштабадский район",
+                  "data": "dzh_dashtobod",
+                  "prefix": null,
+                  "metadata": "67",
+                  "parent_field_name": "city",
+                  "field_data_order": 7
+                },
+                {
+                  "name": "Бахмальский район",
+                  "data": "dzh_bahmal",
+                  "prefix": null,
+                  "metadata": "59",
+                  "parent_field_name": "city",
+                  "field_data_order": 8
+                },
+                {
+                  "name": "Фаришский район",
+                  "data": "dzh_farish",
+                  "prefix": null,
+                  "metadata": "68",
+                  "parent_field_name": "city",
+                  "field_data_order": 9
+                },
+                {
+                  "name": "Зафарабадский район",
+                  "data": "dzh_zafarabad",
+                  "prefix": null,
+                  "metadata": "61",
+                  "parent_field_name": "city",
+                  "field_data_order": 10
+                },
+                {
+                  "name": "Шараф Рашидовский район",
+                  "data": "dzh_sharaf_rashidov",
+                  "prefix": null,
+                  "metadata": "57",
+                  "parent_field_name": "city",
+                  "field_data_order": 11
+                },
+                {
+                  "name": "Арнасайский район",
+                  "data": "dzh_arnasa",
+                  "prefix": null,
+                  "metadata": "63",
+                  "parent_field_name": "city",
+                  "field_data_order": 12
+                },
+                {
+                  "name": "Зарбдорский район",
+                  "data": "dzh_zarbdor",
+                  "prefix": null,
+                  "metadata": "65",
+                  "parent_field_name": "city",
+                  "field_data_order": 13
+                },
+                {
+                  "name": "Янгиабадский район",
+                  "data": "dzh_yangiobod",
+                  "prefix": null,
+                  "metadata": "69",
+                  "parent_field_name": "city",
+                  "field_data_order": 14
+                }
+              ],
+              "surhandarya": [
+                {
+                  "name": "т. Термез",
+                  "data": "sur_termez_gop",
+                  "prefix": null,
+                  "metadata": "167",
+                  "parent_field_name": "city",
+                  "field_data_order": 1
+                },
+                {
+                  "name": "Байсунский район",
+                  "data": "sur_basun",
+                  "prefix": null,
+                  "metadata": "157",
+                  "parent_field_name": "city",
+                  "field_data_order": 2
+                },
+                {
+                  "name": "Денауский район",
+                  "data": "sur_denau",
+                  "prefix": null,
+                  "metadata": "160",
+                  "parent_field_name": "city",
+                  "field_data_order": 3
+                },
+                {
+                  "name": "г. Денау",
+                  "data": "sur_denau_gop",
+                  "prefix": null,
+                  "metadata": "159",
+                  "parent_field_name": "city",
+                  "field_data_order": 4
+                },
+                {
+                  "name": "Жаркурганский район",
+                  "data": "sur_dzharkurgan",
+                  "prefix": null,
+                  "metadata": "161",
+                  "parent_field_name": "city",
+                  "field_data_order": 5
+                },
+                {
+                  "name": "Музрабатский район",
+                  "data": "sur_muzrabad",
+                  "prefix": null,
+                  "metadata": "164",
+                  "parent_field_name": "city",
+                  "field_data_order": 6
+                },
+                {
+                  "name": "Шерабадский район",
+                  "data": "sur_sherabad",
+                  "prefix": null,
+                  "metadata": "169",
+                  "parent_field_name": "city",
+                  "field_data_order": 7
+                },
+                {
+                  "name": "Шурчинский район",
+                  "data": "sur_shurchin",
+                  "prefix": null,
+                  "metadata": "170",
+                  "parent_field_name": "city",
+                  "field_data_order": 8
+                },
+                {
+                  "name": "Узунский район",
+                  "data": "sur_uzun",
+                  "prefix": null,
+                  "metadata": "171",
+                  "parent_field_name": "city",
+                  "field_data_order": 9
+                },
+                {
+                  "name": "Сариасийский район",
+                  "data": "sur_sariasi",
+                  "prefix": null,
+                  "metadata": "166",
+                  "parent_field_name": "city",
+                  "field_data_order": 10
+                },
+                {
+                  "name": "Ангорский район",
+                  "data": "sur_angor",
+                  "prefix": null,
+                  "metadata": "156",
+                  "parent_field_name": "city",
+                  "field_data_order": 11
+                },
+                {
+                  "name": "Кизирикский район",
+                  "data": "sur_kizirik",
+                  "prefix": null,
+                  "metadata": "162",
+                  "parent_field_name": "city",
+                  "field_data_order": 12
+                },
+                {
+                  "name": "Кумкурганский район",
+                  "data": "sur_kumkurgan",
+                  "prefix": null,
+                  "metadata": "163",
+                  "parent_field_name": "city",
+                  "field_data_order": 13
+                },
+                {
+                  "name": "Термезский район",
+                  "data": "sur_termez",
+                  "prefix": null,
+                  "metadata": "168",
+                  "parent_field_name": "city",
+                  "field_data_order": 14
+                },
+                {
+                  "name": "Алтынсайский район",
+                  "data": "sur_oltinsoy",
+                  "prefix": null,
+                  "metadata": "165",
+                  "parent_field_name": "city",
+                  "field_data_order": 15
+                },
+                {
+                  "name": "Бандыханский район",
+                  "data": "sur_bandihan",
+                  "prefix": null,
+                  "metadata": "158",
+                  "parent_field_name": "city",
+                  "field_data_order": 16
+                }
+              ]
+            },
+            "field_usage": ["PAY", "INFO"],
+            "from_info": false,
+            "is_mandatory": true,
+            "should_validate": false,
+            "validate_with": null
+          },
+          {
+            "name": "user_id",
+            "label": "Номер счета",
+            "regex": null,
+            "type": "N",
+            "metadata": null,
+            "prefix": null,
+            "order": 3,
+            "regex_description": null,
+            "parent_field_value_prefix": null,
+            "parent_field_value_metadata": "soato",
+            "parent_field_name": null,
+            "field_data": {},
+            "field_usage": ["PAY", "INFO"],
+            "from_info": false,
+            "is_mandatory": true,
+            "should_validate": false,
+            "validate_with": null
+          },
+          {
+            "name": "gas_payment_type",
+            "label": "Тип оплаты за газ",
+            "regex": null,
+            "type": "C",
+            "metadata": null,
+            "prefix": null,
+            "order": 5,
+            "regex_description": null,
+            "parent_field_value_prefix": null,
+            "parent_field_value_metadata": null,
+            "parent_field_name": null,
+            "field_data": {},
+            "field_usage": ["PAY", "INFO"],
+            "from_info": false,
+            "is_mandatory": true,
+            "should_validate": false,
+            "validate_with": null
+          }
+        ],
+        "ddown": false,
+        "is_provider": true,
+        "info_required": "INFO"
+      }
+    ]
+  }
 }

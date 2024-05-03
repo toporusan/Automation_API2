@@ -1,4 +1,4 @@
-package test;
+package tests;
 
 import com.github.javafaker.Faker;
 import endpoints.UserEndPoints;
@@ -28,27 +28,27 @@ public class UserTests {
     }
 
 
-    @Test (priority = 1)
+    @Test(priority = 1)
     public void testPOSTuser() {
         Response response = UserEndPoints.createUSer(userPayload);
         response.then().log().all();
 
-        Assert.assertEquals(response.getStatusCode(),200);
+        Assert.assertEquals(response.getStatusCode(), 200);
         System.out.println("----------------------------------------");
 
     }
 
-    @Test (priority = 2)
+    @Test(priority = 2)
     public void testGetUserByName() {
         Response response = UserEndPoints.readUser(userPayload.getUsername());
         response.then().log().all();
 
-        Assert.assertEquals(response.getStatusCode(),200);
+        Assert.assertEquals(response.getStatusCode(), 200);
         System.out.println("----------------------------------------");
     }
 
-    @Test (priority = 3)
-    void updateUserByName() {
+    @Test(priority = 3)
+    public void updateUserByName() {
 
         // update data using payload
         userPayload.setUsername(faker.name().username());
@@ -59,12 +59,22 @@ public class UserTests {
         Response response = UserEndPoints.updateUser(userPayload, this.userPayload.getUsername());
         response.then().log().all();
 
-        Assert.assertEquals(response.getStatusCode(),200);
+        Assert.assertEquals(response.getStatusCode(), 200);
 
         // for checking how updating was passed
-        response = UserEndPoints.readUser(this.userPayload.getUsername());
-        response.then().log().body();
+        Response responseAfterUpdate = UserEndPoints.readUser(this.userPayload.getUsername());
+        responseAfterUpdate.then().log().body();
         System.out.println("----------------------------------------");
     }
+
+    @Test (priority = 4)
+    public void testDeleteUserByName() {
+        Response response = UserEndPoints.deleteUSer(userPayload, this.userPayload.getUsername());
+        response.then().log().all();
+
+        Assert.assertEquals(response.getStatusCode(),200);
+
+    }
+
 
 }
