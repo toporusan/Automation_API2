@@ -24,10 +24,10 @@ public class UserEndPoints {
     }
 
     // GET
-    public static Response readUser(String username) {
+    public static Response readUser(String userName) {
         Response response = given()
                 .accept("application/json")
-                .pathParam("username", username) // имя конкретного пользователя
+                .pathParam("username", userName) // имя конкретного пользователя
                 .when()
                 .get(get_url);
 
@@ -48,12 +48,9 @@ public class UserEndPoints {
     }
 
     // DELETE
-    public static Response deleteUSer(User payload,String userName) {
+    public static Response deleteUser(String userName) {
         Response response = given()
-                .accept("application/json")
-                .contentType("application/json")
-                .pathParam("username", userName) // имя конкретного пользователя
-                .body(payload)
+                .pathParam("username", userName) // query - имя конкретного пользователя
                 .when()
                 .delete(delete_url);
 

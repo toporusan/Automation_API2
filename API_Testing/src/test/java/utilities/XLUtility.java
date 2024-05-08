@@ -29,7 +29,7 @@ public class XLUtility {
         fi = new FileInputStream(path);
         workbook = new XSSFWorkbook(fi);
         sheet = workbook.getSheet(sheetName);
-        int rowCount = sheet.getFirstRowNum();// count the rows
+        int rowCount = sheet.getLastRowNum();// count the rows
         workbook.close();
         fi.close();
         return rowCount;
