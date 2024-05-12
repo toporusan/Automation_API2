@@ -29,17 +29,17 @@ public class DDTests {
         // response.then().log().body();
 
         Assert.assertEquals(response.getStatusCode(), 200);
-        System.out.println("----------------------------------------");
+        System.out.println("---------------testPOSTUser-------------");
 
     }
 
-    @Test(priority = 2, dataProvider = "UsersName", dataProviderClass = DataProviders.class)
+    @Test(priority = 2, dataProvider = "UsersName", dataProviderClass = DataProviders.class) // dataProviderClass = DataProviders.class если провайдер и тесты находятся в разных классах/папках
     public void deleteUserByName(String userName) {
 
        Response response = UserEndPoints.deleteUser(userName);
 
         Assert.assertEquals(response.getStatusCode(),200);
-        System.out.println("----------------------------------------");
+        System.out.println("------------deleteUserByName------------");
 
     }
 
