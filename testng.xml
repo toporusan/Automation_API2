@@ -4,19 +4,30 @@
 
     <listeners>
         <listener class-name="utilities.ExtentReportManager"></listener>
-        <!--Добавили слушатель чтобы можно было логироваться-->
+        <!--Добавили слушатель чтобы можно было создавать отчеты-->
     </listeners>
 
 
     <test verbose="2" preserve-order="true" name="PetTests">
         <classes>
+
             <!--<class name="tests.DDTests">
                 <methods>
                     <include name="testPOSTUser"/>
                     <include name="deleteUserByName"/>
                 </methods>
             </class>-->
-            <class name="tests.UserTests">
+
+           <!-- <class name="tests.UserTests">
+                <methods>
+                    <include name="testPOSTuser"/>
+                    <include name="testGetUserByName"/>
+                    <include name="updateUserByName"/>
+                    <include name="testDeleteUserByName"/>
+                </methods>
+            </class>-->
+
+            <class name="tests.UserTests2">
                 <methods>
                     <include name="testPOSTuser"/>
                     <include name="testGetUserByName"/>
@@ -24,6 +35,7 @@
                     <include name="testDeleteUserByName"/>
                 </methods>
             </class>
+
         </classes>
     </test>
 </suite>
