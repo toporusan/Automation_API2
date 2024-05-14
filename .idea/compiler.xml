@@ -11,7 +11,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="API_Automation" target="17" />
       <module name="API_Testing" target="17" />
+      <module name="API_Testing (1)" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>

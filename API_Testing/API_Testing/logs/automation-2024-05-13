@@ -1,8 +1,0 @@
-17:26:46.374 [main] INFO  tests.UserTests2 - *** User is updated ***
-17:26:46.379 [main] INFO  tests.UserTests2 - *** Deleting user ***
-17:26:47.209 [main] INFO  tests.UserTests2 - *** User deleted ***
-17:28:15.383 [main] INFO  tests.UserTests2 - *** Creating user ***
-17:28:17.308 [main] INFO  tests.UserTests2 - *** User is created ***
-17:28:32.471 [main] INFO  tests.UserTests2 - *** Creating user ***
-17:28:34.352 [main] INFO  tests.UserTests2 - *** User is created ***
-17:29:26.278 [main] INFO  tests.UserTests2 - *** Creating user ***
