@@ -3,7 +3,7 @@
 <Configuration status="Warn">
 
     <Properties>
-        <Property name="basePath">API_Testing/logs</Property>
+        <Property name="basePath">logs</Property>
     </Properties>
 
     <Appenders>
