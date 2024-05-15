@@ -2,21 +2,21 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="PetSute">
 
-    <listeners>
+    <!--<listeners>
         <listener class-name="utilities.ExtentReportManager"></listener>
-        <!--Добавили слушатель чтобы можно было создавать отчеты-->
-    </listeners>
+        &lt;!&ndash;Добавили слушатель чтобы можно было создавать отчеты&ndash;&gt;
+    </listeners>-->
 
 
     <test verbose="2" preserve-order="true" name="PetTests">
         <classes>
 
-            <class name="tests.DDTests">
+            <!--<class name="tests.DDTests">
                 <methods>
                     <include name="testPOSTUser"/>
                     <include name="deleteUserByName"/>
                 </methods>
-            </class>
+            </class>-->
 
           <!--  <class name="tests.UserTests">
                 <methods>

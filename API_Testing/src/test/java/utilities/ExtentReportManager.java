@@ -48,7 +48,6 @@ public class ExtentReportManager implements ITestListener { // ITestListener Ð¸Ð
     public void onTestSuccess(ITestResult result) {
         test = extent.createTest(result.getName());
         test.assignCategory(result.getMethod().getGroups());
-        test.createNode(result.getName());
         test.log(Status.PASS, "Test passed");
     }
 
