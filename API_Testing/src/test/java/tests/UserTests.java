@@ -77,7 +77,7 @@ public class UserTests {
         // for checking how updating was passed
         Response responseAfterUpdate = UserEndPoints.readUser(this.userPayload.getUsername());
         responseAfterUpdate.then().log().body();
-        logger.info("*** User is updated ***");
+        logger.info("*** User is updated **");
     }
 
     @Test (priority = 4)
