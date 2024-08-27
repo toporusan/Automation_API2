@@ -39,7 +39,7 @@ public class DDTests {
        Response response = UserEndPoints.deleteUser(userName);
 
         Assert.assertEquals(response.getStatusCode(),200);
-        System.out.println("------------deleteUserByName------------");
+        System.out.println("------------deleteUserByName------->>-----");
 
     }
 
