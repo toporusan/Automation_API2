@@ -61,7 +61,7 @@ public class UserTests {
 
     @Test(priority = 3)
     public void updateUserByName() {
-        logger.info("*** Updating user information ***");
+        logger.info("*** Updating user information **");
 
         // update data using payload
         userPayload.setUsername(faker.name().username());
@@ -82,7 +82,7 @@ public class UserTests {
 
     @Test (priority = 4)
     public void testDeleteUserByName() {
-        logger.info("*** Deleting user ***");
+        logger.info("*** Deleting user _ ***");
 
         Response response = UserEndPoints.deleteUser(this.userPayload.getUsername());
         response.then().log().all();
